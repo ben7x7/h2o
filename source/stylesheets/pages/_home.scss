@@ -1,17 +1,11 @@
-#home {
-  background-color: #D23333;
-  color: white;
+#container-home {
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  text-align: center;
-  p {
-    margin-top: 1.5em;
-  }
-  a {
-    color: rgba(0,0,0,0.4);
-    font-weight: bold;
-    font-size: 16px;
-  }
+}
+.blue-wrapper {
+  background-color: blue;
+  background-size: cover;
+}
+.gray-wrapper {
+  background-color: #F4F4F4;
+  background-size: cover;
 }
