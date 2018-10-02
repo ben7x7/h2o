@@ -1,11 +1,105 @@
-#container-home {
-  height: 100vh;
-}
-.blue-wrapper {
-  background-color: blue;
+.white-wrapper {
+  background-color: white;
   background-size: cover;
 }
-.gray-wrapper {
+.home-picture {
+  background-image: image_url("home-picture.png");
+  background-size: cover;
+  height: 550px;
+}
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+.banner-content {
+  width: 700px;
+}
+.home-picture-bis {
+  height: 550px;
+  background-image: image_url("canal.png");
+  background-size: cover;
+}
+.grey-wrapper {
+  color: #46678E;
   background-color: #F4F4F4;
   background-size: cover;
+}
+.title-container {
+  padding: 50px;
+}
+.wrapper-features {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 0px 100px 0px;
+}
+.feature {
+  border: 4px solid #46678E;
+  border-radius: 15px;
+  padding: 50px 30px;
+  width: 250px;
+  height: 250px;
+  text-align: center;
+  font-weight: bold;
+  background-color: white;
+  img {
+    height: 50px;
+  }
+}
+.container-domain {
+  padding-bottom: 100px;
+}
+.container-parc {
+  padding-top: 50px;
+  padding-left: 15px;
+}
+.title-domain,
+.domaine-name {
+  color: white;
+}
+.domain,
+.sub-sector {
+  width: 100%;
+  border: 1 solid #F4F4F4;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  color: black;
+}
+.sub-title-history {
+  display: flex;
+}
+.sub-title-history-text {
+  padding-left: 10px;
+}
+.modal-title {
+  text-align: center;
+}
+.picture-modal {
+  text-align: center;
+  padding-bottom: 20px;
+  img {
+    max-width: 870px;
+    max-height: 700px;
+  }
+}
+.container-book {
+  padding-bottom: 100px;
+}
+.contact-content {
+  color: white;
+  padding-bottom: 200px;
+}
+.book {
+  text-align: center;
+  img {
+    width: 200px;
+  }
+}
+.blue-wrapper {
+  background-color: #46678E;
+  background-size: cover;
+  .title-container {
+    color: white;
+  }
 }
