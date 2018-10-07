@@ -2,6 +2,14 @@
   background-color: white;
   background-size: cover;
 }
+#first {
+  padding: 0;
+  a {
+    font-weight: bold;
+    font-size: 24px;
+    color: red;
+  }
+}
 .home-picture {
   background-image: image_url("home-picture.png");
   background-size: cover;
@@ -16,14 +24,14 @@
 .banner-content {
   width: 700px;
 }
-.home-picture-bis {
+#picture-bis {
   height: 550px;
   background-image: image_url("canal.png");
   background-size: cover;
 }
-.grey-wrapper {
+#home-grey-wrapper {
   color: #46678E;
-  background-color: #F4F4F4;
+  background-color: #F2F2F2;
   background-size: cover;
 }
 .title-container {
@@ -71,6 +79,9 @@
 }
 .sub-title-history-text {
   padding-left: 10px;
+}
+.modal {
+  color: #4A4A4A;
 }
 .modal-title {
   text-align: center;

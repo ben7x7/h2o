@@ -2,3 +2,79 @@
   margin: 0 auto;
   width: 900px;
 }
+#floated {
+  float: right;
+  margin-left: 1em;
+  margin-bottom: 1em;
+  img {
+    width: 300px;
+  }
+}
+#details {
+  width: 100%;
+  text-align: justify;
+  h3 {
+    font-size: 28px;
+  }
+}
+.planche{
+  text-align: center;
+  img {
+    width: 400px;
+  }
+  h5 {
+    font-size: 14px;
+    color: #9B9B9B;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}
+.planche-right-small{
+  clear: both;
+  float: right;
+  margin-left: 1em;
+  text-align: center;
+  img {
+    width: 300px;
+  }
+  h5 {
+    font-size: 14px;
+    color: #9B9B9B;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}
+#planche2 {
+  float: right;
+  margin-left: 1em;
+}
+#planche5 {
+  float: left;
+  margin-right: 1em;
+}
+#planche3,
+#planche4 {
+  height: 600px;
+}
+.retour-sommaire-link {
+  clear: both;
+  font-size: 24px;
+  font-weight: bold;
+  color: #46678E;
+  text-transform: none;
+  text-decoration: none;
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+.partie-1,
+.partie-2,
+.partie-3,
+.partie-4 {
+  clear: both;
+  padding: 30px 0px;
+}
+.wrap-planche {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 0px;
+}

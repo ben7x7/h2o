@@ -1,17 +1,17 @@
-<div class="white-wrapper">
+<div class="white-wrapper" id="first" >
   <div class="home-picture"></div>
   <div class="banner">
     <div class="banner-content">
       <div class="text-center">
         <h1>Le parcours de l'eau autour du Château de Fontainebleau</h1>
         <h4>par Jacques Bessière</h4>
-        <%= link_to "LIRE", "book.html" %>
+        <%= link_to "LIRE", "/book.html" %>
       </div>
     </div>
   </div>
-  <div class="home-picture-bis"></div>
 </div>
-<div class="grey-wrapper">
+<div class="home-picture-bis" id="picture-bis"></div>
+<div class="grey-wrapper" id="home-grey-wrapper">
   <div class="container">
     <div class="title-container text-center">
       <h2>Pour chaque secteur du Domaine étudié</h2>
@@ -45,6 +45,11 @@
     </div>
     <div class="container-parc">
       <div class="row">
+        <div class="col-xs-12 col-sm-4">
+          <div class="map-index">
+            <%= image_tag("card-index.jpg") %>
+          </div>
+        </div>
         <div class="col-xs-12 col-sm-8">
           <div class="jardins">
             <div class="row">
@@ -67,11 +72,11 @@
                         <h3 class="modal-title">Jardin de Diane</h3>
                       </div>
                       <div class="modal-body">
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("historical.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Un peu d'Histoire:</h4>
                           </div>
                         </div>
@@ -83,11 +88,11 @@
                             <br>
                           </div>
                         </div>
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("reseau.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Le Réseau:</h4>
                           </div>
                         </div>
@@ -101,23 +106,23 @@
                             <p>Le nombre de veines au niveau des quatre parterres dépasse largement le réseau d’arrosage reporté sur la carte de Bray. On peut noter sur le plus grand parterre au moins six noeuds où se rencontrent quatre veines d’eau. L’origine des dix veines passant entre les Cours Ovale et Henri IV dans l’allée du fossé Médicis est précisée.</p>
                           </div>
                         </div>
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("carte-disparu.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Structures disparues:</h4>
                           </div>
                         </div>
                         <div class="text-justify">
                           <div class="text-disparu">
-                            <div class="float-right-small">
+                            <div class="float-right sm-picture">
                               <%= image_tag("plan-chapelle.png") %>
                               <h5>Fondations d'une chapelle ?</h5>
                             </div>
                             <p>Nous avons mis en évidence dans le coin Est du Jardin de Diane, dans la Galerie des Cerfs et dans l’aile des Petits Appartements les fondations d’une structure orientée est-ouest qui pourrait être celles d’une chapelle avec une ogive orientée à l’ouest ce qui n’est pas habituel. Sa localisation hors des murs , mais très proche des anciennes murailles du Château pourrait expliquer cependant cette orientation que l’on a déjà observé lorsque l’environnement était peu favorable pour appliquer les conventions habituelles.</p>
                             <p>Ses dimensions en largeur et en longueur se rapprochent beaucoup de celles de la première chapelle Saint Saturnin que nous avons localisée.</p>
-                            <div class="float-left-small">
+                            <div class="float-left sm-picture">
                             <%= image_tag("plan-chapelle2.png") %>
                             <h5>Chapelle sur le chemin de l'Etang ?</h5>
                             </div>
@@ -148,11 +153,11 @@
                         <h3 class="modal-title">Le Jardin Anglais</h3>
                       </div>
                       <div class="modal-body">
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("historical.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Un peu d'Histoire:</h4>
                           </div>
                         </div>
@@ -165,11 +170,11 @@
                             <br>
                           </div>
                         </div>
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("reseau.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Le Réseau:</h4>
                           </div>
                         </div>
@@ -185,11 +190,11 @@
                             <br>
                           </div>
                         </div>
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("carte-disparu.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Structures disparues:</h4>
                           </div>
                         </div>
@@ -226,11 +231,11 @@
                         <h3 class="modal-title">Autour de l'Etang</h3>
                       </div>
                       <div class="modal-body">
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("historical.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Un peu d'Histoire:</h4>
                           </div>
                         </div>
@@ -242,11 +247,11 @@
                             <br>
                           </div>
                         </div>
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("reseau.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Le Réseau:</h4>
                           </div>
                         </div>
@@ -262,11 +267,11 @@
                             <br>
                           </div>
                         </div>
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("carte-disparu.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Structures disparues:</h4>
                           </div>
                         </div>
@@ -296,11 +301,11 @@
                         <h3 class="modal-title">La Source</h3>
                       </div>
                       <div class="modal-body">
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("historical.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Un peu d'Histoire:</h4>
                           </div>
                         </div>
@@ -312,11 +317,11 @@
                             <br>
                           </div>
                         </div>
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("reseau.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Le Réseau:</h4>
                           </div>
                         </div>
@@ -331,11 +336,11 @@
                             <br>
                           </div>
                         </div>
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("carte-disparu.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Structures disparues:</h4>
                           </div>
                         </div>
@@ -364,11 +369,11 @@
                         <h3 class="modal-title">L'aile Louis XV</h3>
                       </div>
                       <div class="modal-body">
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("historical.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Un peu d'Histoire:</h4>
                           </div>
                         </div>
@@ -379,11 +384,11 @@
                             <br>
                           </div>
                         </div>
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("reseau.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Le Réseau:</h4>
                           </div>
                         </div>
@@ -397,11 +402,11 @@
                             <br>
                           </div>
                         </div>
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("carte-disparu.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Structures disparues:</h4>
                           </div>
                         </div>
@@ -434,11 +439,11 @@
                         <h3 class="modal-title">Le Fleuriste</h3>
                       </div>
                       <div class="modal-body">
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("historical.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Un peu d'Histoire:</h4>
                           </div>
                         </div>
@@ -450,11 +455,11 @@
                             <br>
                           </div>
                         </div>
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("reseau.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Le Réseau:</h4>
                           </div>
                         </div>
@@ -468,11 +473,11 @@
                             <br>
                           </div>
                         </div>
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("carte-disparu.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Structures disparues:</h4>
                           </div>
                         </div>
@@ -500,11 +505,11 @@
                         <h3 class="modal-title">La Grotte des Pins</h3>
                       </div>
                       <div class="modal-body">
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("historical.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Un peu d'Histoire:</h4>
                           </div>
                         </div>
@@ -514,11 +519,11 @@
                             <br>
                           </div>
                         </div>
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("reseau.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Le Réseau:</h4>
                           </div>
                         </div>
@@ -551,11 +556,11 @@
                         <h3 class="modal-title">Centre Sportif d'Equitation</h3>
                       </div>
                       <div class="modal-body">
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("historical.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Un peu d'Histoire:</h4>
                           </div>
                         </div>
@@ -571,11 +576,11 @@
                             <br>
                           </div>
                         </div>
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("reseau.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Le Réseau:</h4>
                           </div>
                         </div>
@@ -595,11 +600,11 @@
                             <p>Un nouvel aménagement des circuits d’eau est en cours dans le Manège Sénarmont en travaux, si bien que les relevés actuels sont incomplets.</p>
                           </div>
                         </div>
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("carte-disparu.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Structures disparues:</h4>
                           </div>
                         </div>
@@ -641,11 +646,11 @@
                         <h3 class="modal-title">Le Grand Parterre</h3>
                       </div>
                       <div class="modal-body">
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("historical.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Un peu d'Histoire:</h4>
                           </div>
                         </div>
@@ -658,11 +663,11 @@
                             <br>
                           </div>
                         </div>
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("reseau.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Le Réseau:</h4>
                           </div>
                         </div>
@@ -681,11 +686,11 @@
                             <br>
                           </div>
                         </div>
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("carte-disparu.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Structures disparues:</h4>
                           </div>
                         </div>
@@ -716,11 +721,11 @@
                         <h3 class="modal-title">L'Avenue de Maintenon</h3>
                       </div>
                       <div class="modal-body">
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("historical.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Un peu d'Histoire:</h4>
                           </div>
                         </div>
@@ -730,11 +735,11 @@
                             <br>
                           </div>
                         </div>
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("reseau.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Le Réseau:</h4>
                           </div>
                         </div>
@@ -751,11 +756,11 @@
                             <p>La sortie du Jardin Anglais proche de la Porte de Maintenon est fortement innervée avec 5 bornes proches les unes des autres. Les débits et les profondeurs diffèrent, ce qui facilite le suivi des canalisations. Une fuite importante de l’étang vers le Boulingrin est également mise en évidence à une profondeur voisin de 6m avec un débit élevé (d2).</p>
                           </div>
                         </div>
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("carte-disparu.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Structures disparues:</h4>
                           </div>
                         </div>
@@ -784,11 +789,11 @@
                         <h3 class="modal-title">Le Pavillon de Sully</h3>
                       </div>
                       <div class="modal-body">
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("historical.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Un peu d'Histoire:</h4>
                           </div>
                         </div>
@@ -799,11 +804,11 @@
                             <br>
                           </div>
                         </div>
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("reseau.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Le Réseau:</h4>
                           </div>
                         </div>
@@ -819,18 +824,18 @@
                             <br>
                           </div>
                         </div>
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("carte-disparu.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Structures disparues:</h4>
                           </div>
                         </div>
                         <div class="text-justify">
                           <div class="text-disparu">
                             <p>Des limites de l’abreuvoir ont été détectées au pied du Pavillon Sully. Il n’a pas été possible de suivre son extension vers la rue Séramy à cause de la présence de nombreuses veines d’eau allant vers le Parc.</p>
-                            <div class="float-left-small">
+                            <div class="float-left sm-picture">
                               <%= image_tag("card-arches.png") %>
                               <h5>Arches détectées</h5>
                             </div>
@@ -857,11 +862,11 @@
                         <h3 class="modal-title">La Place d'Armes</h3>
                       </div>
                       <div class="modal-body">
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("historical.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Un peu d'Histoire:</h4>
                           </div>
                         </div>
@@ -873,11 +878,11 @@
                             <br>
                           </div>
                         </div>
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("reseau.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Le Réseau:</h4>
                           </div>
                         </div>
@@ -912,11 +917,11 @@
                         <h3 class="modal-title">La Cour Henri IV</h3>
                       </div>
                       <div class="modal-body">
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("historical.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Un peu d'Histoire:</h4>
                           </div>
                         </div>
@@ -928,11 +933,11 @@
                             <br>
                           </div>
                         </div>
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("reseau.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Le Réseau:</h4>
                           </div>
                         </div>
@@ -950,11 +955,11 @@
                             <br>
                           </div>
                         </div>
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("carte-disparu.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Structures disparues:</h4>
                           </div>
                         </div>
@@ -982,11 +987,11 @@
                         <h3 class="modal-title">La Cour Ovale</h3>
                       </div>
                       <div class="modal-body">
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("historical.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Un peu d'Histoire:</h4>
                           </div>
                         </div>
@@ -997,11 +1002,11 @@
                             <P>La Chapelle Saint Saturnin, la Salle de Bal, le portique de Sério ainsi que la Porte du Baptistère édifiée en souvenir du baptême de Louis XIII (1601-1643) en 1606, bordent cette Cour prestigieuse.</p>
                           </div>
                         </div>
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("reseau.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Le Réseau:</h4>
                           </div>
                         </div>
@@ -1018,11 +1023,11 @@
                             <br>
                           </div>
                         </div>
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("carte-disparu.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Structures disparues:</h4>
                           </div>
                         </div>
@@ -1031,7 +1036,7 @@
                             <p>Il est possible de suivre avec les baguettes le tracé de l’escalier du Roi qui figure sur le pavé.</p>
                             <p>Des sous-sols sont mis en évidence: un passage entre le bâtiment de la cour Henri IV et la Cour Ovale est détecté, ainsi que le tracé probable d’un souterrain d’une largeur de 2,5m, allant vers les Mathurins en traversant le Jardin de Diane.</p>
                             <p>Consacrée par l’archevêque de Canterbury Thomas Becket en 1169, la première chapelle Saint Saturnin a au fil du temps disparu. Celle que nous voyons aujourd’hui a été construite par François I en 1545, soit plus de trois siècles après. Depuis très longtemps on recherche la localisation précise de la première chapelle.</p>
-                            <div class="float-left-small">
+                            <div class="float-left sm-picture">
                               <%= image_tag("carte-becket.jpg") %>
                               <h5>Chapelle de Becket</h5>
                             </div>
@@ -1062,11 +1067,11 @@
                         <h3 class="modal-title">La Cour de la Fontaine</h3>
                       </div>
                       <div class="modal-body">
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("historical.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Un peu d'Histoire:</h4>
                           </div>
                         </div>
@@ -1077,11 +1082,11 @@
                             <p>L’aile de la Belle Cheminée, œuvre de Primatice entre 1565 et 1570, est imposante par ses deux escaliers à rampe droite. Philibert Delorme et Primatice (1558-1566) construisent l’aile des Reines Mères, et Gabriel (1750) le Gros Pavillon.</p>
                           </div>
                         </div>
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("reseau.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Le Réseau:</h4>
                           </div>
                         </div>
@@ -1117,11 +1122,11 @@
                         <h3 class="modal-title">La Cour des Adieux</h3>
                       </div>
                       <div class="modal-body">
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("historical.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Un peu d'Histoire:</h4>
                           </div>
                         </div>
@@ -1131,11 +1136,11 @@
                             <p>Le très bel escalier en fer à cheval, érigé entre 1632 et 1634 par Jean Androuet Du Cerceau, confère à l’ensemble une grande élégance.</p>
                           </div>
                         </div>
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("reseau.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Le Réseau:</h4>
                           </div>
                         </div>
@@ -1150,11 +1155,11 @@
                             <p>On remarque une canalisation qui vient de l’Etang et qui va alimenter les fossés Médicis, puis beaucoup plus tard des citernes para incendie.</p>
                           </div>
                         </div>
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("carte-disparu.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Structures disparues:</h4>
                           </div>
                         </div>
@@ -1184,11 +1189,11 @@
                         <h3 class="modal-title">La Cour des Mathurins</h3>
                       </div>
                       <div class="modal-body">
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("historical.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Un peu d'Histoire:</h4>
                           </div>
                         </div>
@@ -1200,11 +1205,11 @@
                             <br>
                           </div>
                         </div>
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("reseau.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Le Réseau:</h4>
                           </div>
                         </div>
@@ -1249,11 +1254,11 @@
                         <h3 class="modal-title">Vue générale du Parc</h3>
                       </div>
                       <div class="modal-body">
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("historical.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Un peu d'Histoire:</h4>
                           </div>
                         </div>
@@ -1263,11 +1268,11 @@
                             <p>Soixante-dix ans après la mort d’Henri IV, Le Nôtre crée en 1680 la Grande Prairie avec ses cinq bassins. On y élève des daims. Sous Louis XIV, le Parc est très fréquenté par la Cour. Il n’est pas rare de voir des cortèges de dizaines de carrosses y déambuler lors des séjours du Roi Soleil.</p>
                           </div>
                         </div>
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("reseau.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Le Réseau:</h4>
                           </div>
                         </div>
@@ -1288,11 +1293,11 @@
                             </div>
                           </div>
                         </div>
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("carte-disparu.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Structures disparues:</h4>
                           </div>
                         </div>
@@ -1320,11 +1325,11 @@
                         <h3 class="modal-title">La Sortie du Grand Canal</h3>
                       </div>
                       <div class="modal-body">
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("historical.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Un peu d'Histoire:</h4>
                           </div>
                         </div>
@@ -1337,11 +1342,11 @@
                             <br>
                           </div>
                         </div>
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("reseau.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Le Réseau:</h4>
                           </div>
                         </div>
@@ -1360,11 +1365,11 @@
                             <br>
                           </div>
                         </div>
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("carte-disparu.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Structures disparues:</h4>
                           </div>
                         </div>
@@ -1396,11 +1401,11 @@
                         <h3 class="modal-title">Le Bassin Central</h3>
                       </div>
                       <div class="modal-body">
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("historical.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Un peu d'Histoire:</h4>
                           </div>
                         </div>
@@ -1411,11 +1416,11 @@
                             <p>C’est au niveau de la Porte Rouge que Louis Philippe a failli être victime d’un attentat fomenté par un déséquilibré en 1846, alors qu’il revenait d’une visite du chantier de la ligne de chemin de fer. La gare de Fontainebleau-Avon ouvrira en septembre 1849.</p>
                           </div>
                         </div>
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("reseau.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Le Réseau:</h4>
                           </div>
                         </div>
@@ -1432,18 +1437,18 @@
                             <br>
                           </div>
                         </div>
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("carte-disparu.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Structures disparues:</h4>
                           </div>
                         </div>
                         <div class="text-justify">
                           <div class="text-disparu">
                             <p>Les limites du bassin central de 120m de long ont pu être détectées avec les baguettes. Ces limites ne figuraient plus sur la carte du Parc réalisée en 1857 du fait de leur disparition. Ces limites correspondent à celles définies sur la carte de Billaudel (1712). Cette réponse sourcière peut être considérée comme une confirmation de l’existence de ce bassin, même si l’on ne retrouverait pas de pierres. Rappelons que la présence d’un monument sur un tableau n’est pas en soi une preuve absolue de sa réalisation, beaucoup de projets d’architectes ou de jardiniers n’ayant pas toujours abouti pour des raisons diverses.</p>
-                            <div class="picture-modal" >
+                            <div class="picture-modal lg-picture" >
                               <%= image_tag("carte-seche.png") %>
                               <h5>Alimentation des bassins de Le Nôtre</h5>
                             </div>
@@ -1470,11 +1475,11 @@
                         <h3 class="modal-title">Les 3 Bassins</h3>
                       </div>
                       <div class="modal-body">
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("historical.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Un peu d'Histoire:</h4>
                           </div>
                         </div>
@@ -1485,11 +1490,11 @@
                             <br>
                           </div>
                         </div>
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("reseau.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Le Réseau:</h4>
                           </div>
                         </div>
@@ -1505,11 +1510,11 @@
                             <br>
                           </div>
                         </div>
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("carte-disparu.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Structures disparues:</h4>
                           </div>
                         </div>
@@ -1541,11 +1546,11 @@
                         <h3 class="modal-title">La Porte Blanche</h3>
                       </div>
                       <div class="modal-body">
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("historical.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Un peu d'Histoire:</h4>
                           </div>
                         </div>
@@ -1558,11 +1563,11 @@
                             <br>
                           </div>
                         </div>
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("reseau.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Le Réseau:</h4>
                           </div>
                         </div>
@@ -1578,11 +1583,11 @@
                             <br>
                           </div>
                         </div>
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("carte-disparu.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Structures disparues:</h4>
                           </div>
                         </div>
@@ -1612,11 +1617,11 @@
                         <h3 class="modal-title">Le Carrefour de la Mi-Voie</h3>
                       </div>
                       <div class="modal-body">
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("historical.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Un peu d'Histoire:</h4>
                           </div>
                         </div>
@@ -1628,11 +1633,11 @@
                             <br>
                           </div>
                         </div>
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("reseau.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Le Réseau:</h4>
                           </div>
                         </div>
@@ -1644,7 +1649,7 @@
                           <div class="text-reseau">
                             <p>Venant de la Pépinière et de l’aire de jeu, de nombreuses veines s’écoulent dans la direction ouest/est.</p>
                             <p>La présence des cascatelles, du collecteur et des autres veines d’eau rend le tracé difficile au Carrefour si l’on ne tient pas compte des profondeurs et des débits.</p>
-                            <div class="picture-modal">
+                            <div class="picture-modal lg-picture">
                               <%= image_tag("carte-carrefour.jpg") %>
                               <h5>Carrefour de la Mi-Voie</h5>
                             </div>
@@ -1653,11 +1658,11 @@
                             <br>
                           </div>
                         </div>
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("carte-disparu.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Structures disparues:</h4>
                           </div>
                         </div>
@@ -1688,11 +1693,11 @@
                         <h3 class="modal-title">La Pépinière</h3>
                       </div>
                       <div class="modal-body">
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("historical.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Un peu d'Histoire:</h4>
                           </div>
                         </div>
@@ -1705,11 +1710,11 @@
                             <br>
                           </div>
                         </div>
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("reseau.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Le Réseau:</h4>
                           </div>
                         </div>
@@ -1724,11 +1729,11 @@
                             <br>
                           </div>
                         </div>
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("carte-disparu.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Structures disparues:</h4>
                           </div>
                         </div>
@@ -1757,11 +1762,11 @@
                         <h3 class="modal-title">Les Héronnières</h3>
                       </div>
                       <div class="modal-body">
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("historical.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Un peu d'Histoire:</h4>
                           </div>
                         </div>
@@ -1773,11 +1778,11 @@
                             <br>
                           </div>
                         </div>
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("reseau.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Le Réseau:</h4>
                           </div>
                         </div>
@@ -1796,17 +1801,17 @@
                             <br>
                           </div>
                         </div>
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("carte-disparu.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Structures disparues:</h4>
                           </div>
                         </div>
                         <div class="text-justify">
                           <div class="text-disparu">
-                            <div class="picture">
+                            <div class="float-left md-picture">
                               <%= image_tag("card-carre.jpg") %>
                               <h5>Le Carré des Héronnières</h5>
                             </div>
@@ -1838,11 +1843,11 @@
                         <h3 class="modal-title">La Fontaine de la Reine</h3>
                       </div>
                       <div class="modal-body">
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("historical.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Un peu d'Histoire:</h4>
                           </div>
                         </div>
@@ -1854,11 +1859,11 @@
                             <br>
                           </div>
                         </div>
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("reseau.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Le Réseau:</h4>
                           </div>
                         </div>
@@ -1875,11 +1880,11 @@
                             <br>
                           </div>
                         </div>
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("carte-disparu.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Structures disparues:</h4>
                           </div>
                         </div>
@@ -1912,11 +1917,11 @@
                         <h3 class="modal-title">L'Avenue des Cascades</h3>
                       </div>
                       <div class="modal-body">
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("historical.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Un peu d'Histoire:</h4>
                           </div>
                         </div>
@@ -1928,11 +1933,11 @@
                             <br>
                           </div>
                         </div>
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("reseau.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Le Réseau:</h4>
                           </div>
                         </div>
@@ -1958,11 +1963,11 @@
                             <br>
                           </div>
                         </div>
-                        <div class="sub-title-history">
-                          <div class="float-icon">
+                        <div class="subtitle">
+                          <div class="subtitle-icon">
                             <%= image_tag("carte-disparu.png") %>
                           </div>
-                          <div class="sub-title-history-text">
+                          <div class="subtitle-name">
                             <h4>Structures disparues:</h4>
                           </div>
                         </div>
@@ -1984,11 +1989,7 @@
             </div>
           </div>
         </div>
-        <div class="col-xs-12 col-sm-4">
-          <div class="map-index">
-            <%= image_tag("card-index.jpg") %>
-          </div>
-        </div>
+
       </div>
     </div>
   </div>
