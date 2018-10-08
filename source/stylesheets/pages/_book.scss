@@ -1,20 +1,11 @@
-//@media(max-width: 1025px) {
-
-//   .container {
-//     width: fit-content;
-//   }
-//   .main-container{
-//     display: block !important;
-//   }
-//   .container-content {
-//     position: static !important;
-//     padding: 0px 50px 50px 50px !important;
-//   }
-//   .fa {
-//     margin-left: 20px;
-//     margin-top: 10px;
-//   }
-// }
+@media(min-width: 992px) {
+  .grey-wrapper {
+    padding: 15px 50px 30px 50px;
+  }
+  .white-wrapper {
+    padding: 15px 50px 30px 50px;
+  }
+}
 //  **********  the-book  *************
 .main-container {
   display: flex;
