@@ -55,30 +55,33 @@
     height: 50px;
   }
 }
-.container-domain {
-  padding-bottom: 100px;
-}
+
 .container-parc {
-  padding-top: 50px;
-  padding-left: 15px;
-}
-.title-domain,
-.domaine-name {
-  color: white;
-}
-.domain,
-.sub-sector {
-  width: 100%;
-  border: 1 solid #F4F4F4;
-  border-radius: 5px;
-  margin-bottom: 5px;
-  color: black;
-}
-.sub-title-history {
   display: flex;
 }
-.sub-title-history-text {
-  padding-left: 10px;
+.map-index img {
+  height: 100vh;
+}
+.subdomain-links {
+  width: 100%;
+  padding: 0px 15px;
+}
+.domain {
+  border-radius: 3px;
+  width: 100%;
+  margin: 0px 10px 5px 5px;
+  padding: 0;
+  color: #4A4A4A;
+}
+.wrap-sub-sector {
+  display: flex;
+}
+.sub-sector {
+  border-radius: 3px;
+  color: #4A4A4A;
+  width: 50%;
+  margin: 0px 5px 5px 5px;
+  padding: 0;
 }
 .modal {
   color: #4A4A4A;
@@ -94,7 +97,8 @@
     max-height: 700px;
   }
 }
-.container-book {
+.container-book,
+.container-domain {
   padding-bottom: 100px;
 }
 .contact-content {
