@@ -61,6 +61,7 @@
 }
 .map-index img {
   height: 100vh;
+  padding-left: 15px;
 }
 .subdomain-links {
   width: 100%;
@@ -125,6 +126,6 @@
 #blue-div {
   box-shadow: none;
   &:hover {
-    color: none;
+    color: #46678E !important;
   }
 }
