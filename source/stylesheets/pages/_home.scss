@@ -7,7 +7,7 @@
   a {
     font-weight: bold;
     font-size: 24px;
-    color: red;
+    color: #21B3F6;
   }
 }
 .home-picture {
@@ -25,8 +25,8 @@
   width: 700px;
 }
 #picture-bis {
-  height: 550px;
-  background-image: image_url("canal.png");
+  height: 500px;
+  background-image: image_url("home-canal.jpg");
   background-size: cover;
 }
 #home-grey-wrapper {
@@ -40,7 +40,7 @@
 .wrapper-features {
   display: flex;
   justify-content: space-around;
-  margin: 50px 0px 100px 0px;
+  margin: 0px 0px 50px 0px;
 }
 .feature {
   border: 4px solid #46678E;
@@ -66,12 +66,8 @@
   width: 100%;
   padding: 0px 15px;
 }
-.domain {
-  border-radius: 3px;
-  width: 100%;
-  margin: 0px 10px 5px 5px;
-  padding: 0;
-  color: #4A4A4A;
+.title-sector{
+  padding: 10px 0px;
 }
 .wrap-sub-sector {
   display: flex;
@@ -82,12 +78,20 @@
   width: 50%;
   margin: 0px 5px 5px 5px;
   padding: 0;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.4);
+  &:hover {
+    background-color: #B5C1DA;
+    background-size: cover;
+    font-weight: bold;
+  }
 }
 .modal {
   color: #4A4A4A;
 }
 .modal-title {
   text-align: center;
+  color: #4A4A4A !important;
+
 }
 .picture-modal {
   text-align: center;
@@ -111,10 +115,16 @@
     width: 200px;
   }
 }
-.blue-wrapper {
+.home-blue-wrapper {
   background-color: #46678E;
   background-size: cover;
-  .title-container {
+  h2, h3 {
     color: white;
+  }
+}
+#blue-div {
+  box-shadow: none;
+  &:hover {
+    color: none;
   }
 }

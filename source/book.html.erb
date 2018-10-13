@@ -1,3 +1,7 @@
+<% content_for(:title_tag) do %>
+  eauduparc.com | Le Livre
+<% end %>
+
 <div class="main-container">
   <div class="sommaire hidden-xs hidden-sm" id="sommaire">
     <nav class="sommaire-sidebar" id="navbar-sidebar">
@@ -118,17 +122,17 @@
         </div>
         <div class="section-text text-justify">
           <p> Jadis, le lieu où se trouve le Château de Fontainebleau était fort marécageux et peu accueillant, où l'eau y régnait sans partage. Nous nous sommes demandé comment les bâtisseurs et les jardiniers d'antan et d'aujourd'hui ont su la maitriser pour aboutir aux perspectives splendides qui entourent aujourd’hui le Château.</p>
-          <p>Pour tenter d’y répondre, nous avons entrepris la cartographie détaillée des eaux souterraines du Parc, des Cours et des Jardins en utilisant les baguettes de sourcier. Cette méthode permet également de détecter parfois les fondations de structures disparues ou cachées.</p>
           <div class="float-right lg-picture">
             <%= image_tag("bord-canal.jpg") %>
             <h5>La Grande Prairie au bord du canal</h5>
           </div>
+          <p>Pour tenter d’y répondre, nous avons entrepris la cartographie détaillée des eaux souterraines du Parc, des Cours et des Jardins en utilisant les baguettes de sourcier. Cette méthode permet également de détecter parfois les fondations de structures disparues ou cachées.</p>
           <p>Nous allons ensemble dans le Parc vous faire découvrir le parcours de l’eau vers les Étangs, vers le Grand Canal avec sa centaine de veines, vers la Grande Prairie où nous avons fait réapparaitre les bassins de Le Nôtre avec leur alimentation. Nous retrouverons les fontaines de la Mi-Voie et de la Reine au milieu d’un réseau très dense ainsi que la structure des Écuries Royales dans le Carré des Héronnières avec ses bassins. Nous suivrons également les deux souterrains qui vont vers la Cour Ovale.</p>
-          <p>Dans le Grand Parterre puis dans les Cours du Château, nous longerons les aqueducs de François I et d’Henri IV, et verrons les réseaux d’eau très complexes que nous avons mis en évidence, en particulier Cour Henri IV, Place d’Armes et Cour des Adieux. Nous indiquerons où se trouvent les fondations de la première chapelle Saint Saturnin consacrée par Thomas Becket, Archevêque de Canterbury, fondations qui sont recherchées depuis longtemps.</p>
           <div class="float-left lg-picture">
             <%= image_tag("grospavillon.jpg") %>
             <h5>Le Gros Pavillon</h5>
           </div>
+          <p>Dans le Grand Parterre puis dans les Cours du Château, nous longerons les aqueducs de François I et d’Henri IV, et verrons les réseaux d’eau très complexes que nous avons mis en évidence, en particulier Cour Henri IV, Place d’Armes et Cour des Adieux. Nous indiquerons où se trouvent les fondations de la première chapelle Saint Saturnin consacrée par Thomas Becket, Archevêque de Canterbury, fondations qui sont recherchées depuis longtemps.</p>
           <p>Dans le Jardin de Diane, nous avons retrouvé les bases de la Fontaine de la Volière, les fondations d’une autre chapelle, les limites de l’Orangerie et de la Galerie des Chevreuils, ainsi qu’un souterrain partant de la Cour Ovale et allant vers la Porte des Mathurins.</p>
           <p>Dans le Jardin Anglais nous avons découvert au milieu d’un réseau très serré quatre structures circulaires harmonieusement disposées devant la façade Louis XV, dont l’origine reste, pour le moment, inconnue. Les bases du Théâtre de la Ville construit sous Louis XV ont également été mises en évidence dans le quartier du Fleuriste.</p>
           <p>Pour terminer, nous retrouverons au Centre Sportif d’Équitation Militaire les réseaux très denses qui alimentent les écuries et les manèges occupés par deux cents chevaux.</p>
@@ -143,12 +147,14 @@
           <h3>L'Auteur</h3>
         </div>
         <div class="section-text text-justify">
-          <p>Ancien Professeur d’Université en Chimie Physique à Nancy, nous nous sommes intéressé à la radiesthésie à la suite de la lecture des ouvrages d'Armand Viré et d’Yves Rocard, qui a été directeur du Laboratoire de Physique de l’École Normale Supérieure, dont la spécialité était le magnétisme, et qui a cherché à expliquer par la Physique le signal sourcier.</p>
-          <div class="float-right md-picture">
-            <%= image_tag("mineurs.png") %>
-          </div>
+          <p>Ancien Professeur d’Université en Chimie Physique à Nancy, nous nous sommes intéressé à la radiesthésie à la suite de la lecture des ouvrages d'Armand Viré et d’Yves Rocard, qui a été directeur du Laboratoire de Physique de l’École Normale Supérieure, dont la spécialité était le magnétisme, et qui a cherché à expliquer par la Physique le signal sourcier.</p>
+            <div class="float-right md-picture">
+              <%= image_tag("mineurs.png") %>
+              <h5>Les mineurs de Bohème munis de baguettes. <br>Metallica Agricola (1530)</h5>
+            </div>
+
           <p>Deux informations nous ont conduit à nous lancer dans la pratique de cette « discipline »: le journal local, l’Est  Républicain, publiait il y a une trentaine d’années, en première page, un article indiquant que 80% des fuites d’eau à Nancy étaient détectées avec les baguettes de sourcier. Nous apprenions de plus que des cours de radiesthésie étaient donnés aux géologues dans certaines universités russes pour la recherche de l’eau et des minerais.</p>
-          <p>Nous avons alors effectué de premiers essais sur des sites connus puis inconnus et des bons résultats que nous obtenions, nous en avons déduit que nous faisions partie, selon Yves Rocard, des 80% de personnes capables de détecter et de suivre les eaux souterraines, à condition de bien s’y préparer.</p>
+          <p>Nous avons alors effectué de premiers essais sur des sites connus puis inconnus et des bons résultats que nous obtenions, nous en avons déduit que nous faisions partie, selon Yves Rocard, des 80% de personnes capables de détecter et de suivre les eaux souterraines, à condition de bien s’y préparer.</p><br>
           <p>Désormais davantage disponible, nous avons mis à profit notre expérience dans ce domaine pour suivre l’eau et détecter des structures disparues autour du Château de Fontainebleau.</p>
           <br>
         </div>
@@ -163,6 +169,7 @@
         <div class="section-text text-justify">
           <div class="float-right sm-picture">
             <%= image_tag("planche1.jpg") %>
+            <h5>Planche 1</h5>
           </div>
           <p>La cartographie des eaux souterraines du Parc, des Cours et des Jardins du Château de Fontainebleau a été établie en utilisant les baguettes de sourcier qui permettent de localiser une veine d’eau, de suivre sa direction, d’évaluer sa profondeur et son débit.</p>
           <p>Depuis des siècles, les faits et gestes des sourciers donnent lieu à de nombreuses expériences, interprétations et polémiques.</p>
@@ -1948,7 +1955,7 @@
         <%= image_tag("last.jpg") %>
       </div>
     </div>
-
+    </div>
   </div>
 </div>
 

@@ -1,3 +1,7 @@
+<% content_for(:title_tag) do %>
+  eauduparc.com | Home
+<% end %>
+
 <div class="white-wrapper" id="first">
   <div class="home-picture"></div>
   <div class="banner">
@@ -38,7 +42,7 @@
     </div>
   </div>
 </div>
-<div class="blue-wrapper">
+<div class="home-blue-wrapper">
   <div class="container-domain">
     <div class="title-container text-center">
       <h2>Le domaine du Château de Fontainebleau</h2>
@@ -48,160 +52,163 @@
         <%= image_tag("card-index.jpg") %>
       </div>
       <div class="subdomain-links">
-        <div class="text-center">
+        <div class="title-sector text-center">
           <h3>LES JARDINS</h3>
         </div>
-        <button type="button" class="domain" data-toggle="modal" data-target="#modalJardin1">Jardin de Diane</button>
-        <div class="modal fade bs-example-modal-lg" id="modalJardin1" tabindex="-1" role="dialog" >
-          <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h3 class="modal-title">Jardin de Diane</h3>
-              </div>
-              <div class="modal-body">
-                <div class="subtitle">
-                  <div class="subtitle-icon">
-                    <%= image_tag("historical.png") %>
-                  </div>
-                  <div class="subtitle-name">
-                    <h4>Un peu d'Histoire:</h4>
-                  </div>
+        <div class="wrap-sub-sector">
+          <button type="button" class="sub-sector" data-toggle="modal" data-target="#modalJardin1">Le Jardin de Diane</button>
+          <div class="modal fade bs-example-modal-lg" id="modalJardin1" tabindex="-1" role="dialog" >
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h3 class="modal-title">Le Jardin de Diane</h3>
                 </div>
-                <div class="text-justify">
-                  <div class="text-history">
-                    <p>Ce Jardin doit son nom à la statue de Diane Chasseresse qui orne la fontaine élevée sous Henri IV en 1603. La statue est une copie d’un marbre antique donné par le pape Paul V au roi Henri II. La statue originale est au Louvre.</p>
-                    <p>Ce jardin était à l’origine le jardin privatif de la reine Catherine Médicis. Les frères Mollet, les Francini, Primatice, Le Nôtre ont au cours du temps enrichi cet espace en parterres, statues, et fontaines qui émerveillaient les très rares visiteurs.</p>
-                    <p>L’absence d’entretien pendant la Révolution obligea Napoléon à un effort considérable pour relever le Domaine, en particulier ce Jardin. Son architecte Hurtault modifia alors radicalement sa physionomie en créant un jardin paysager à l’anglaise que Napoléon appréciait particulièrement.</p>
-                    <br>
-                  </div>
-                </div>
-                <div class="subtitle">
-                  <div class="subtitle-icon">
-                    <%= image_tag("reseau.png") %>
-                  </div>
-                  <div class="subtitle-name">
-                    <h4>Le Réseau:</h4>
-                  </div>
-                </div>
-                <div class="text-justify">
-                  <div class="picture-modal">
-                    <%= image_tag("carte-diane.jpg") %>
-                      <h5>Le Jardin de Diane</h5>
-                  </div>
-                  <div class="text-reseau">
-                    <p>La topographie indique une différence de trois mètres entre l’entrée du jardin Place Denecourt et la Fontaine de Diane, mais les écoulements ne vont pas tous dans le même sens. La Fontaine de Diane est alimentée par sept veines d’eau à fort débit (d3) l’une venant d’une seconde branche de l’aqueduc Henri IV qui longe la Galerie des Cerfs. La veine d’évacuation vers la Cour Ovale est à fort débit (d2).</p>
-                    <p>Le nombre de veines au niveau des quatre parterres dépasse largement le réseau d’arrosage reporté sur la carte de Bray. On peut noter sur le plus grand parterre au moins six noeuds où se rencontrent quatre veines d’eau. L’origine des dix veines passant entre les Cours Ovale et Henri IV dans l’allée du fossé Médicis est précisée.</p>
-                  </div>
-                </div>
-                <div class="subtitle">
-                  <div class="subtitle-icon">
-                    <%= image_tag("carte-disparu.png") %>
-                  </div>
-                  <div class="subtitle-name">
-                    <h4>Structures disparues:</h4>
-                  </div>
-                </div>
-                <div class="text-justify">
-                  <div class="text-disparu">
-                    <div class="float-right sm-picture">
-                      <%= image_tag("plan-chapelle.png") %>
-                      <h5>Fondations d'une chapelle ?</h5>
+                <div class="modal-body">
+                  <div class="subtitle">
+                    <div class="subtitle-icon">
+                      <%= image_tag("historical.png") %>
                     </div>
-                    <p>Nous avons mis en évidence dans le coin Est du Jardin de Diane, dans la Galerie des Cerfs et dans l’aile des Petits Appartements les fondations d’une structure orientée est-ouest qui pourrait être celles d’une chapelle avec une ogive orientée à l’ouest ce qui n’est pas habituel. Sa localisation hors des murs , mais très proche des anciennes murailles du Château pourrait expliquer cependant cette orientation que l’on a déjà observé lorsque l’environnement était peu favorable pour appliquer les conventions habituelles.</p>
-                    <p>Ses dimensions en largeur et en longueur se rapprochent beaucoup de celles de la première chapelle Saint Saturnin que nous avons localisée.</p>
-                    <div class="float-left sm-picture">
-                    <%= image_tag("plan-chapelle2.png") %>
-                    <h5>Chapelle sur le chemin de l'Etang ?</h5>
+                    <div class="subtitle-name">
+                      <h4>Un peu d'Histoire:</h4>
                     </div>
-                    <p>Compte tenu de la proximité du village qui côtoyait le Château, il est possible qu’il s’agisse de la chapelle paroissiale sur le chemin de l’Etang. Reste à trouver des documents qui le confirment et à mettre en œuvre les techniques envisagées pour confirmer la localisation de la première chapelle Saint Saturnin.</p>
-                    <p>Trois cercles concentriques de 4, 8 et 16m de diamètre, remarquablement disposés par rapport à la Fontaine de Diane, marqueraient les bases de la Fontaine de la Volière.</p>
-                    <p>Les fondations de l’aile de l’Orangerie et de la Galerie des Chevreuils, ainsi que celles d’un pavillon d’angle carré de 7m ont été mises en évidence. L’amorce d’une possible terrasse apparaît également.</p>
-                    <p>Un souterrain partant de la Cour Ovale et allant vers la Porte des Mathurins a aussi été détecté.</p>
-                    <br>
+                  </div>
+                  <div class="text-justify">
+                    <div class="text-history">
+                      <p>Ce Jardin doit son nom à la statue de Diane Chasseresse qui orne la fontaine élevée sous Henri IV en 1603. La statue est une copie d’un marbre antique donné par le pape Paul V au roi Henri II. La statue originale est au Louvre.</p>
+                      <p>Ce jardin était à l’origine le jardin privatif de la reine Catherine Médicis. Les frères Mollet, les Francini, Primatice, Le Nôtre ont au cours du temps enrichi cet espace en parterres, statues, et fontaines qui émerveillaient les très rares visiteurs.</p>
+                      <p>L’absence d’entretien pendant la Révolution obligea Napoléon à un effort considérable pour relever le Domaine, en particulier ce Jardin. Son architecte Hurtault modifia alors radicalement sa physionomie en créant un jardin paysager à l’anglaise que Napoléon appréciait particulièrement.</p>
+                      <br>
+                    </div>
+                  </div>
+                  <div class="subtitle">
+                    <div class="subtitle-icon">
+                      <%= image_tag("reseau.png") %>
+                    </div>
+                    <div class="subtitle-name">
+                      <h4>Le Réseau:</h4>
+                    </div>
+                  </div>
+                  <div class="text-justify">
+                    <div class="picture-modal">
+                      <%= image_tag("carte-diane.jpg") %>
+                        <h5>Le Jardin de Diane</h5>
+                    </div>
+                    <div class="text-reseau">
+                      <p>La topographie indique une différence de trois mètres entre l’entrée du jardin Place Denecourt et la Fontaine de Diane, mais les écoulements ne vont pas tous dans le même sens. La Fontaine de Diane est alimentée par sept veines d’eau à fort débit (d3) l’une venant d’une seconde branche de l’aqueduc Henri IV qui longe la Galerie des Cerfs. La veine d’évacuation vers la Cour Ovale est à fort débit (d2).</p>
+                      <p>Le nombre de veines au niveau des quatre parterres dépasse largement le réseau d’arrosage reporté sur la carte de Bray. On peut noter sur le plus grand parterre au moins six noeuds où se rencontrent quatre veines d’eau. L’origine des dix veines passant entre les Cours Ovale et Henri IV dans l’allée du fossé Médicis est précisée.</p>
+                    </div>
+                  </div>
+                  <div class="subtitle">
+                    <div class="subtitle-icon">
+                      <%= image_tag("carte-disparu.png") %>
+                    </div>
+                    <div class="subtitle-name">
+                      <h4>Structures disparues:</h4>
+                    </div>
+                  </div>
+                  <div class="text-justify">
+                    <div class="text-disparu">
+                      <div class="float-right sm-picture">
+                        <%= image_tag("plan-chapelle.png") %>
+                        <h5>Fondations d'une chapelle ?</h5>
+                      </div>
+                      <p>Nous avons mis en évidence dans le coin Est du Jardin de Diane, dans la Galerie des Cerfs et dans l’aile des Petits Appartements les fondations d’une structure orientée est-ouest qui pourrait être celles d’une chapelle avec une ogive orientée à l’ouest ce qui n’est pas habituel. Sa localisation hors des murs , mais très proche des anciennes murailles du Château pourrait expliquer cependant cette orientation que l’on a déjà observé lorsque l’environnement était peu favorable pour appliquer les conventions habituelles.</p>
+                      <p>Ses dimensions en largeur et en longueur se rapprochent beaucoup de celles de la première chapelle Saint Saturnin que nous avons localisée.</p>
+                      <div class="float-left sm-picture">
+                      <%= image_tag("plan-chapelle2.png") %>
+                      <h5>Chapelle sur le chemin de l'Etang ?</h5>
+                      </div>
+                      <p>Compte tenu de la proximité du village qui côtoyait le Château, il est possible qu’il s’agisse de la chapelle paroissiale sur le chemin de l’Etang. Reste à trouver des documents qui le confirment et à mettre en œuvre les techniques envisagées pour confirmer la localisation de la première chapelle Saint Saturnin.</p>
+                      <p>Trois cercles concentriques de 4, 8 et 16m de diamètre, remarquablement disposés par rapport à la Fontaine de Diane, marqueraient les bases de la Fontaine de la Volière.</p>
+                      <p>Les fondations de l’aile de l’Orangerie et de la Galerie des Chevreuils, ainsi que celles d’un pavillon d’angle carré de 7m ont été mises en évidence. L’amorce d’une possible terrasse apparaît également.</p>
+                      <p>Un souterrain partant de la Cour Ovale et allant vers la Porte des Mathurins a aussi été détecté.</p>
+                      <br>
+                    </div>
                   </div>
                 </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
               </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+          <button type="button" class="sub-sector" data-toggle="modal" data-target="#modalJardin2">Le Jardin Anglais</button>
+          <div class="modal fade bs-example-modal-lg" id="modalJardin2" tabindex="-1" role="dialog" >
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h3 class="modal-title">Le Jardin Anglais</h3>
+                </div>
+                <div class="modal-body">
+                  <div class="subtitle">
+                    <div class="subtitle-icon">
+                      <%= image_tag("historical.png") %>
+                    </div>
+                    <div class="subtitle-name">
+                      <h4>Un peu d'Histoire:</h4>
+                    </div>
+                  </div>
+                  <div class="text-justify">
+                    <div class="text-history">
+                      <p>Après la Révolution, le Jardin des Pins de François I, ceux d’Henri IV et de Louis XIV, situés à l’ouest du Grand Parterre, sont à l'abandon. Napoléon décide alors en 1810 d’aménager ces espaces dans la tradition des jardins anglais du 18ème siècle.</p>
+                      <p>Dessiné par Maximilien Hurtault, le jardin Anglais, nom qu’il prendra en 1866, rompt comme le Jardin de Diane avec la tradition des jardins à la française. Les allées rectilignes, les parterres de fleurs disparaissent au profit d’allées sinueuses entre ombrages verdoyants.</p>
+                      <p>Une rivière artificielle, la rivière Anglaise, part de la Fontaine « Belle Eau » qui aurait donné son nom au Château, pour rejoindre l’Étang des Carpes. On peut encore aujourd'hui admirer l’allure majestueuse des platanes et des séquoias plantés à l’époque.</p>
+                      <p>Situé dans l’enceinte du Jardin, le Centre Sportif Equestre Militaire a succédé à l’Ecole d’Artillerie qui avait été installée en 1871.</p>
+                      <br>
+                    </div>
+                  </div>
+                  <div class="subtitle">
+                    <div class="subtitle-icon">
+                      <%= image_tag("reseau.png") %>
+                    </div>
+                    <div class="subtitle-name">
+                      <h4>Le Réseau:</h4>
+                    </div>
+                  </div>
+                  <div class="text-justify">
+                    <div class="picture-modal">
+                      <%= image_tag("carte-anglais.jpg") %>
+                      <h5>Vue générale du Jardin Anglais</h5>
+                    </div>
+                    <div class="text-reseau">
+                      <p>La surface du Jardin est de 15,7 hectares. Sur le plan topographique, les variations d'altitude sont sensiblement plus faibles que celles observées dans le Parc.</p>
+                      <p>Les points hauts s’alignent sur la limite droite du Jardin, de l’Obélisque jusqu’à la Grotte des Pins (74,5m), comme sur la limite gauche où l’on atteint l’altitude la plus élevée (76m). On note une différence de 5m lorsque l’on va de l‘Étang des Carpes à l’Obélisque ou au domaine le Fleuriste. Le réseau est particulièrement dense dans trois espaces: le premier se situe en face de l’aile Louis XV, le second dans le domaine le Fleuriste, le dernier autour du manège Sénarmont.</p>
+                      <p>Quelques chiffres: plus de 30 veines d’eau arrivent dans l’Etang des Carpes et près de 50 arrivent ou partent de l’aile Louis XV.</p>
+                      <br>
+                    </div>
+                  </div>
+                  <div class="subtitle">
+                    <div class="subtitle-icon">
+                      <%= image_tag("carte-disparu.png") %>
+                    </div>
+                    <div class="subtitle-name">
+                      <h4>Structures disparues:</h4>
+                    </div>
+                  </div>
+                  <div class="text-justify">
+                    <div class="text-disparu">
+                      <p>Nous envisageons:</p>
+                      <ul>
+                        <li><p>Les trois conduites sèches aboutissant dans l’Etang</p></li>
+                        <li><p>Les bases d’un mur bordant l’Étang (INRAP)</p></li>
+                        <li><p>Une fontaine proche de la limite de l’Obélisque</p></li>
+                        <li><p>Une fontaine proche de la statue du jeune braconnier</p></li>
+                        <li><p>Les quatre structures circulaires devant l’aile Louis XV</p></li>
+                      </ul>
+                      <br>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <button type="button" class="domain" data-toggle="modal" data-target="#modalJardin2">Le Jardin Anglais</button>
-        <div class="modal fade bs-example-modal-lg" id="modalJardin2" tabindex="-1" role="dialog" >
-          <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h3 class="modal-title">Le Jardin Anglais</h3>
-              </div>
-              <div class="modal-body">
-                <div class="subtitle">
-                  <div class="subtitle-icon">
-                    <%= image_tag("historical.png") %>
-                  </div>
-                  <div class="subtitle-name">
-                    <h4>Un peu d'Histoire:</h4>
-                  </div>
-                </div>
-                <div class="text-justify">
-                  <div class="text-history">
-                    <p>Après la Révolution, le Jardin des Pins de François I, ceux d’Henri IV et de Louis XIV, situés à l’ouest du Grand Parterre, sont à l'abandon. Napoléon décide alors en 1810 d’aménager ces espaces dans la tradition des jardins anglais du 18ème siècle.</p>
-                    <p>Dessiné par Maximilien Hurtault, le jardin Anglais, nom qu’il prendra en 1866, rompt comme le Jardin de Diane avec la tradition des jardins à la française. Les allées rectilignes, les parterres de fleurs disparaissent au profit d’allées sinueuses entre ombrages verdoyants.</p>
-                    <p>Une rivière artificielle, la rivière Anglaise, part de la Fontaine « Belle Eau » qui aurait donné son nom au Château, pour rejoindre l’Étang des Carpes. On peut encore aujourd'hui admirer l’allure majestueuse des platanes et des séquoias plantés à l’époque.</p>
-                    <p>Situé dans l’enceinte du Jardin, le Centre Sportif Equestre Militaire a succédé à l’Ecole d’Artillerie qui avait été installée en 1871.</p>
-                    <br>
-                  </div>
-                </div>
-                <div class="subtitle">
-                  <div class="subtitle-icon">
-                    <%= image_tag("reseau.png") %>
-                  </div>
-                  <div class="subtitle-name">
-                    <h4>Le Réseau:</h4>
-                  </div>
-                </div>
-                <div class="text-justify">
-                  <div class="picture-modal">
-                    <%= image_tag("carte-anglais.jpg") %>
-                    <h5>Vue générale du Jardin Anglais</h5>
-                  </div>
-                  <div class="text-reseau">
-                    <p>La surface du Jardin est de 15,7 hectares. Sur le plan topographique, les variations d'altitude sont sensiblement plus faibles que celles observées dans le Parc.</p>
-                    <p>Les points hauts s’alignent sur la limite droite du Jardin, de l’Obélisque jusqu’à la Grotte des Pins (74,5m), comme sur la limite gauche où l’on atteint l’altitude la plus élevée (76m). On note une différence de 5m lorsque l’on va de l‘Étang des Carpes à l’Obélisque ou au domaine le Fleuriste. Le réseau est particulièrement dense dans trois espaces: le premier se situe en face de l’aile Louis XV, le second dans le domaine le Fleuriste, le dernier autour du manège Sénarmont.</p>
-                    <p>Quelques chiffres: plus de 30 veines d’eau arrivent dans l’Etang des Carpes et près de 50 arrivent ou partent de l’aile Louis XV.</p>
-                    <br>
-                  </div>
-                </div>
-                <div class="subtitle">
-                  <div class="subtitle-icon">
-                    <%= image_tag("carte-disparu.png") %>
-                  </div>
-                  <div class="subtitle-name">
-                    <h4>Structures disparues:</h4>
-                  </div>
-                </div>
-                <div class="text-justify">
-                  <div class="text-disparu">
-                    <p>Nous envisageons:</p>
-                    <ul>
-                      <li><p>Les trois conduites sèches aboutissant dans l’Etang</p></li>
-                      <li><p>Les bases d’un mur bordant l’Étang (INRAP)</p></li>
-                      <li><p>Une fontaine proche de la limite de l’Obélisque</p></li>
-                      <li><p>Une fontaine proche de la statue du jeune braconnier</p></li>
-                      <li><p>Les quatre structures circulaires devant l’aile Louis XV</p></li>
-                    </ul>
-                    <br>
-                  </div>
-                </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
+
         <div class="wrap-sub-sector">
           <button type="button" class="sub-sector" data-toggle="modal" data-target="#modalJardin3">Autour de l'Etang</button>
           <div class="modal fade bs-example-modal-lg" id="modalJardin3" tabindex="-1" role="dialog" >
@@ -600,7 +607,7 @@
             </div>
           </div>
         </div>
-        <div class="text-center">
+        <div class="title-sector text-center">
           <h3>LES COURS</h3>
         </div>
         <div class="wrap-sub-sector">
@@ -851,7 +858,7 @@
                   </div>
                   <div class="text-justify">
                     <div class="picture-modal">
-                      <%= image_tag("carte-armes.jpg") %>
+                      <%= image_tag("c-armes.jpg") %>
                       <h5>La Place d'Armes</h5>
                     </div>
                     <div class="text-reseau">
@@ -1191,7 +1198,7 @@
           </div>
           <div class="sub-sector" id="blue-div"></div>
         </div>
-        <div class="text-center">
+        <div class="title-sector text-center">
           <h3>LE PARC</h3>
         </div>
         <div class="wrap-sub-sector">
@@ -1952,7 +1959,7 @@
     </div>
   </div>
 </div>
-<div class="blue-wrapper">
+<div class="home-blue-wrapper">
   <div class="container text-center">
     <div class="title-container">
       <h2>Contact</h2>
