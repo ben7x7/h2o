@@ -10,9 +10,9 @@
     <meta name="description" content="Le parcours de l'eau autour du Château de Fontainebleau et découvertes archéologiques de structures disparues grace à la radiesthésie par J. Bessiere">
 
     <!-- Google / Search Engine Tags -->
-    <meta itemprop="name" content="eauduparc.com | L'eau à Fontainebleau">
+    <meta itemprop="name" content="eauduparc.com | L'eau à Fontainebleau" >
     <meta itemprop="description" content="Le parcours de l'eau autour du Château de Fontainebleau et découvertes archéologiques de structures disparues grace à la radiesthésie par J. Bessiere">
-    <meta itemprop="image" content="<%= image_tag 'images/canal.png'%>">
+    <meta itemprop="image" content="<%= image_path 'images/canal.png'%>">
 
 
     <!-- Use the title from a page's frontmatter if it has one -->
@@ -20,7 +20,7 @@
     <title><%= yield(:title_tag).blank? ? "eauduparc.com" : yield(:title_tag) %></title>
     <%= stylesheet_link_tag "application" %>
     <%= javascript_include_tag "application" %>
-    <%= favicon_tag 'images/fountain.png' %>
+    <%= favicon_tag "images/fountain.png" %>
   </head>
   <body>
     <%= yield %>
