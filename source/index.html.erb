@@ -1966,8 +1966,7 @@
     </div>
     <div class="contact-content">
       <h3>Envoyez-nous vos questions et vos commentaires</h3><br>
-      <%= image_tag('i-envelope.png') %>
-      <h4>contact@eauduparc.com</h4>
+      <a data-controller="trackers" data-event="Contact" data-action="click->trackers#activateTracker" id="contact" href="mailto:contact@eauduparc.com"><i class="fas fa-envelope fa-5x"></i></a>
     </div>
   </div>
 </div>
