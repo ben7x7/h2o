@@ -55,7 +55,19 @@
     height: 50px;
   }
 }
-
+.home-sky-blue-wrapper {
+  color: #b4b8ab;
+  background-color: #284B63;
+  background-size: cover;
+  padding-bottom: 70px;
+}
+.home-methode {
+  padding: 10px 0px 50px 0px;
+}
+.btn-methode a {
+  color: white;
+  font-weight: bold;
+}
 .container-parc {
   display: flex;
 }
@@ -117,7 +129,7 @@
   }
 }
 .home-blue-wrapper {
-  background-color: #46678E;
+  background-color: #153243;
   background-size: cover;
   h2, h3 {
     color: white;

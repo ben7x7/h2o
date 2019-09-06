@@ -11,3 +11,6 @@ gem 'font-awesome-sass'
 gem "bootstrap-sass", ">= 3.4.1"
 gem 'jquery-middleman'
 
+group :development do
+  gem 'rb-readline'
+end
