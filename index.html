@@ -1988,19 +1988,28 @@
     </div>
   </div>
 </div>
-<div class="home-blue-wrapper">
+<div class="home-blue-wrapper" id="contact-form">
   <div class="container text-center">
     <div class="title-container">
       <h2>Contact</h2>
     </div>
-    <div class="contact-content">
-      <h3>Envoyez-nous vos questions et vos commentaires</h3><br>
-      <a data-controller="trackers" data-event="Contact" data-action="click->trackers#activateTracker" id="contact" href="mailto:contact@eauduparc.com"><i class="fas fa-envelope fa-5x"></i></a>
-    </div>
+    <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/contact@eauduparc.com" method="post">
+      <fieldset id="fs-frm-inputs">
+        <input type="text" name="name" id="full-name" placeholder="Prénom et Nom" required="">
+        <input type="email" name="_replyto" id="email-address" placeholder="Adresse Email" required="">
+        <textarea rows="5" name="message" id="message" placeholder="Ecrivez-nous vos questions et vos commentaires." required=""></textarea>
+        <input type="hidden" name="_subject" id="email-subject" value="Formulaire eauduparc.com">
+      </fieldset>
+      <input type="submit" value="Envoyer">
+    </form>
   </div>
 </div>
+
+
+
+
 </title>
-    <link href="stylesheets/application-cc40a76b.css" rel="stylesheet" />
+    <link href="stylesheets/application-bf9792f1.css" rel="stylesheet" />
     <script src="javascripts/application-3518ee3a.js"></script>
     <link href="images/fountain-2aa84a7d.png" rel="icon" type="image/png" />
   </head>
@@ -3976,17 +3985,26 @@
     </div>
   </div>
 </div>
-<div class="home-blue-wrapper">
+<div class="home-blue-wrapper" id="contact-form">
   <div class="container text-center">
     <div class="title-container">
       <h2>Contact</h2>
     </div>
-    <div class="contact-content">
-      <h3>Envoyez-nous vos questions et vos commentaires</h3><br>
-      <a data-controller="trackers" data-event="Contact" data-action="click->trackers#activateTracker" id="contact" href="mailto:contact@eauduparc.com"><i class="fas fa-envelope fa-5x"></i></a>
-    </div>
+    <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/contact@eauduparc.com" method="post">
+      <fieldset id="fs-frm-inputs">
+        <input type="text" name="name" id="full-name" placeholder="Prénom et Nom" required="">
+        <input type="email" name="_replyto" id="email-address" placeholder="Adresse Email" required="">
+        <textarea rows="5" name="message" id="message" placeholder="Ecrivez-nous vos questions et vos commentaires." required=""></textarea>
+        <input type="hidden" name="_subject" id="email-subject" value="Formulaire eauduparc.com">
+      </fieldset>
+      <input type="submit" value="Envoyer">
+    </form>
   </div>
 </div>
+
+
+
+
 
   </body>
 </html>
