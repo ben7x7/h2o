@@ -17,7 +17,7 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
-    autoprefixer-rails (9.8.4)
+    autoprefixer-rails (9.8.5)
       execjs
     backports (3.18.1)
     bootstrap-sass (3.4.1)
@@ -31,7 +31,7 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.6)
     contracts (0.13.0)
-    dotenv (2.7.5)
+    dotenv (2.7.6)
     erubis (2.7.0)
     execjs (2.7.0)
     fast_blank (1.0.0)
